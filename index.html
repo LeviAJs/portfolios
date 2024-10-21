@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfólio - Alcides</title>
+    <style>
+        body{
+            background:linear-gradient(90deg, #9900ff, #3300ff);
+        }
+        nav{
+            position: relative;
+            position: fixed;
+            flex-direction:column;
+            margin: 0 ;
+            background-color: rgb(255, 255, 255); 
+            border: 2px solid black;
+            text-align: center; 
+            z-index: 1000;
+        }
+        li{
+            list-style-type: none;
+            border: 2px solid rgb(151, 151, 151);
+            background-color: rgb(132, 126, 206);
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0;  
+        }
+        ol{
+            display: flex;
+            margin: 10px;
+            padding: 0;
+        }
+        .item{
+            margin: 5px;
+            text-align:right;
+        }
+        .content{
+           display: flex;
+           justify-content:center;
+           align-items: center;
+           padding: 10px;
+           margin: 10px;    
+           margin-bottom: 150px;
+        }
+        .parte1{
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 650px;
+            height: 500px;
+            margin: 10px;
+        }
+        .parte2{
+            position:relative;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            border-radius: 15px;
+            width: 650px;
+            height: 650px;
+            padding: 10px;
+            
+        }
+        .apresentar{
+            position:absolute;
+            background-color: rgb(255, 255, 255);
+            border: 5px solid black;
+            width: 550px;
+            height: 550px;
+            left: 60px;
+            bottom: 60px;
+        }
+        #unico{
+            width: 550px;
+            height: 550px;
+        }
+        #troca{
+            position: relative;
+            height: 50px;;
+            top: 200px;
+        }
+        #troco{
+            position: relative;
+            left: 600px;
+            height: 50px;;
+            top: 200px;
+        }
+        #titulo{
+            text-align: center;
+        }
+        #texto{
+            padding: 10px;
+        }
+        .imagem{
+            padding: 10px;
+            margin: 10px;
+            width: 150px;
+            height: auto;
+        }
+       .Parte-atras{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        background-color: white;
+        width: 1400px;
+        height: 650px;
+        border: 3px solid black;
+        border-radius: 15px;
+       }
+       .foto{
+        margin: 15px;
+        padding: 0px;
+        border: 2px solid black;
+        border-radius: 8px;
+        right: 25px;
+       }
+       #h4{
+        text-align: center;
+        background-color: white;
+       }
+       h3{
+        display:flex;
+        position: relative;
+        left: 37%;
+        justify-content:center;
+        background-color:white;
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 150px;
+        width: 300px;
+       }
+       .figure{
+        text-align: center;
+        top: 300px;
+        right: 190px;
+       }
+       .autor{
+        position: relative;
+        text-align: center;
+        bottom: 250px;
+        left: 200px;
+       }
+       .proj{
+        position:relative;
+        display:flex;
+        flex-direction: row;
+        border: 2px solid black;
+        margin: 10px;
+        right: 50px;
+        padding: 0px;
+       }
+       .pro1{
+        position: relative;
+        white-space: nowrap;
+        bottom: 280px;
+        left: 280px;
+       }
+       .formulario{
+        text-align: right;
+        position: relative;
+        right: 250px;
+        font-size: 25px;
+        bottom: 45px;
+        margin-right: 0px;
+        font-family: 'Courier New', Courier, monospace;
+       }
+       #nome{
+        margin:  5px;
+        padding: 5px;
+        font-size: 20px;
+        border-radius: 5px;
+        font-size: 15px;
+       }
+       #email
+       {
+        margin: 5px;
+        padding: 5px;
+        font-size: 20px;
+        border-radius: 5px;
+        font-size: 15px;
+       }
+       #textao{
+        margin: 5px;
+        padding: 5px 10px;
+        font-size: 20px;
+        border-radius:10px;
+        width: 250px;
+        height: 150px;
+       }
+       #botao{
+        margin: 10px;
+        width: 100px;
+        height: 50px;
+        border-radius: 5px;
+       }
+       .forma{
+        position: relative;
+        bottom: 150px;
+        left: 180px;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace; 
+       }
+       #whass{
+        border-radius: 60%;
+        object-fit: cover; 
+       }
+       
+    </style>
+</head>
+<body>
+
+    <!-- Primeira parte para o cabeçalho-->
+    <nav>
+        <ol>
+        <div class="item">
+            <li><a href="#sobre">Sobre mim</a></li>
+        </div>
+        <div class="item">
+            <li> <a href="#Ensino">Ensino</a></li>
+        </div>
+        <div class="item">    
+            <li><a href="#projetos">Projetos</a></li>
+        </div>
+        <div class="item">   
+            <li><a href="#contato">contato</a></li>
+        </div>
+        </ol>
+    </nav>
+
+    <!--Primeira secção sobre mim-->
+    <section id = "sobre">
+        <h3><big>Portifilio</big></h3>
+    <section class="content">
+        <article class="parte1">
+        <h2 id = titulo>I"m Alcides O Junior</h2>
+        <p id="texto">Meu nome é Alcides. Estudo programação há quase 2 anos, tendo começado no ano passado. A primeira vez que estudei foi em um 
+        curso de Análise e Desenvolvimento de Sistemas (ADS), onde aprendi C# do básico ao avançado. Durante esse tempo, também trabalhei com 
+        ferramentas como bancos de dados, HTML, CSS e WordPress. Sinto que ainda tenho muito a aprender. Abaixo, deixei um exemplo do que estive 
+        estudando no mês passado.
+        </p>
+        <img class = "imagem" src="imagens/c-sharp.png" alt="">
+        <img class = "imagem" src="imagens/banco-de-dados.png" alt="">
+        <img class = "imagem" src="imagens/css-html.png" alt="">
+    </article>
+        <article class="parte2">
+            <h4 id = "h4">codigo de codigo-notas</h4>
+            <div class="apresentar">
+                <img id="unico" src="imagens/codigo-notas.png" alt="">
+            </div>
+        </article>
+    </section>
+</section>
+    <footer class="fim"></footer>
+
+       <!--Segunda seria sobre Ensino-->
+<section id = "Ensino">
+       <h3><big>A onde eu aprendi</big></h3>  
+    <section class="content"> 
+        <div class="Parte-atras">
+            <p class="autor">Universidade<br>
+        <div class="foto"></h2><img src="imgens/uninter.jpg" alt="UNINTER" width="300px">
+            <figure>
+                <figcaption><a href="https://www.uninter.com/"target="_black">Uninter</a></figcaption>
+            </figure>
+        </p>
+    </div>     
+            <p class="autor">Prepara Cursos
+        <div class="foto"><img src="imagens/prepara.png" alt="Prepara Cursos"width="300px">
+            <figure>
+                <figcaption><a href="https://www.prepara.com.br/"target="_black">Prepara Cursos</a></figcaption>
+            </figure>
+        </p>
+    </div>
+           <p class="autor"> Udemy
+        <div class="foto"><img src="imagens/udemy.webp" alt="Udemy" width="350px">
+            <figure>
+                <figcaption><a href="https://www.udemy.com/"target="_black">Udemy</a></figcaption>
+            </figure>
+        </p>    
+        </div>
+    </section>
+</section>
+    <footer class="fim"></footer>
+
+    <!--Terceira seria sobre Projectos-->
+<section id = "projetos">
+        <h3><big>Projetos que eu realizei</big></h3>
+        <div class="content">
+            <div class = Parte-atras>
+                <p class="pro1"> Primeira pagina</p>
+                    <div class="proj"><img src="imagens/login.png" alt="" width="600px" height="500px" ></div>
+                <p class="pro1">Banco de dados</p>
+                    <div class="proj"><img src="imagens/livraria.png" alt="" width="600px" height="500px">
+            </div>
+        </div>  
+    </section>
+    <footer class="fim"></footer>
+
+    <!--Ultimo seria o contato-->
+<Section id = "contato">
+    <h3><Big>Contato</Big></h3>
+    <div class="content">
+        <div class="Parte-atras">
+    <form class="formulario" action="" method="post">
+        <p>Nome:<input type="text" id="nome"></p>
+        <p>E-mail:<input type="email"id= "email"></p>
+        <textarea id="textao" rows="10" cols="20" placeholder="perguntas pode mandar por aqui"></textarea></p>
+            <button id="botao" type="">Enviar</button>
+    </form>
+</div>
+    </Section>
+</body>
+</html>
